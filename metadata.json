@@ -1,0 +1,6 @@
+{
+  "name": "Pusdal LH Jawa Bidang Wilayah III",
+  "description": "Website Profil dan Informasi Lingkungan Hidup Provinsi Jawa Timur — Pusdal LH Jawa Bidang Wilayah III",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
