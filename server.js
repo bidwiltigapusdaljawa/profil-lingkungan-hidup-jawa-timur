@@ -23,8 +23,11 @@ app.use('/prototype', express.static(path.join(__dirname, 'prototype')));
 // Root route and fallback serves the main HTML prototype
 app.get('*', (req, res) => {
   const publicIndex = path.join(publicDir, 'index.html');
+  const rootIndex = path.join(__dirname, 'index.html');
   if (fs.existsSync(publicIndex)) {
     res.sendFile(publicIndex);
+  } else if (fs.existsSync(rootIndex)) {
+    res.sendFile(rootIndex);
   } else if (fs.existsSync(prototypeFile)) {
     res.sendFile(prototypeFile);
   } else {
